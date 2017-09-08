@@ -2,18 +2,18 @@
 #  User configuration
 # -----------------------------------------------------------------------------
 
-title:               Hydejack
+title:               ionic.zone
 
 # The unique resource location of your page.
 # Set to `https://<username>.github.io` when hosting on GitHub Pages
-url:                 https://qwtel.com
+url:                 https://ionic-zone.github.io
 
 # Set to '' when hosting a blog on GitHub Pages, ie on `//<username>.github.io`
 # Set to '/<reponame>' when using the `gh-pages` branch of a repository
 baseurl:             /hydejack
 
 # A very short description of your page
-tagline:             A pretentious two-column Jekyll theme.
+tagline:              - a site about all things Ionic
 
 # A short description of the page, used in the sidebar and as fallback for the meta description tag.
 # Markdown enabled, but don't use more than one paragraph (enforced by `>`)
@@ -92,6 +92,10 @@ collections:
   projects:
     permalink:       /projects/:path/
     output:          true
+  articles:
+  title:             Articles
+    output:          true
+    permalink:       /:path
 
 # -----------------------------------------------------------------------------
 #  Advanced configuration
@@ -130,3 +134,11 @@ compress_html:
 
 sass:
   style:             compressed
+
+# Defaults
+defaults:
+  - scope:
+      path: ""
+      type: articles
+    values:
+      layout: article
