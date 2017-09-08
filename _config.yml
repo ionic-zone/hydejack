@@ -134,11 +134,3 @@ compress_html:
 
 sass:
   style:             compressed
-
-# Defaults
-defaults:
-  - scope:
-      path: ""
-      type: articles
-    values:
-      layout: article
