@@ -92,6 +92,10 @@ collections:
   projects:
     permalink:       /projects/:path/
     output:          true
+  articles:
+  title:             Articles
+    output:          true
+    permalink:       /:path
 
 # -----------------------------------------------------------------------------
 #  Advanced configuration
@@ -130,3 +134,11 @@ compress_html:
 
 sass:
   style:             compressed
+
+# Defaults
+defaults:
+  - scope:
+      path: ""
+      type: articles
+    values:
+      layout: article
