@@ -93,7 +93,7 @@ collections:
     permalink:       /projects/:path/
     output:          true
   articles:
-  title:             Articles
+    title:           Articles
     output:          true
     permalink:       /:path
 
