@@ -13,7 +13,7 @@ url:                 https://ionic-zone.github.io
 baseurl:             /hydejack
 
 # A very short description of your page
-tagline:              - a site about all things Ionic
+tagline:             ' - a site about all things Ionic'
 
 # A short description of the page, used in the sidebar and as fallback for the meta description tag.
 # Markdown enabled, but don't use more than one paragraph (enforced by `>`)
@@ -92,10 +92,6 @@ collections:
   projects:
     permalink:       /projects/:path/
     output:          true
-  articles:
-  title:             Articles
-    output:          true
-    permalink:       /:path
 
 # -----------------------------------------------------------------------------
 #  Advanced configuration
@@ -134,11 +130,3 @@ compress_html:
 
 sass:
   style:             compressed
-
-# Defaults
-defaults:
-  - scope:
-      path: ""
-      type: articles
-    values:
-      layout: article
